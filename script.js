@@ -144,7 +144,7 @@ const projects = {
     thumb:'gray-canvas/process-map.svg',hero:'gray-canvas/canvas-cover.jpg',
     heroAlt:'A woman invites the player to draw on a large blank canvas in The Gray Canvas',
     caption:'An interactive story about the everyday experiences of people living with PKD.',
-    videos:[{label:'Watch project video',url:'https://youtu.be/NGM3BM2bxwI'}],
+    videos:[{label:'Watch project video',url:'https://youtu.be/lWENyL8Runo'}],
     chapterAliases:{film:'overview',intention:'origin',decision:'origin',reflection:'iteration-02',research:'interviews',design:'interactions',production:'interactions',testing:'iteration-01','body-awareness':'interactions','family-context':'interactions'},
     openingMediaGroups:[{
       id:'GRAY-00',title:'The Gray Canvas',hint:'An interactive story reshaped through interviews and testing.',
