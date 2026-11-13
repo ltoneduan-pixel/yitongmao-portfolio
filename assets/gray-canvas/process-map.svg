@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 720" role="img" aria-labelledby="title desc">
+  <title id="title">Research to interaction</title>
+  <desc id="desc">A five-stage process from initial assumptions to participant interviews, production, two test rounds, and revision.</desc>
+  <rect width="1400" height="720" fill="#edf4f8"/>
+  <path d="M164 309H1232" fill="none" stroke="#a9c2ce" stroke-width="3"/>
+  <g fill="#286d83">
+    <path d="m407 300 18 9-18 9z"/>
+    <path d="m665 300 18 9-18 9z"/>
+    <path d="m923 300 18 9-18 9z"/>
+    <path d="m1181 300 18 9-18 9z"/>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(72 184)">
+      <rect width="218" height="250" rx="5" fill="#fff" stroke="#c9d7de" stroke-width="2"/>
+      <rect width="218" height="8" rx="4" fill="#286d83"/>
+      <text x="22" y="48" fill="#286d83" font-size="18" letter-spacing="2">01</text>
+      <text x="22" y="108" fill="#24272b" font-size="26" font-weight="600">Initial</text>
+      <text x="22" y="143" fill="#24272b" font-size="26" font-weight="600">assumptions</text>
+      <path d="M22 180h174" stroke="#d9e2e7" stroke-width="2"/>
+      <text x="22" y="216" fill="#626970" font-size="16">A first playable flow</text>
+      <text x="22" y="239" fill="#626970" font-size="16">built from a brainstorm</text>
+    </g>
+    <g transform="translate(330 184)">
+      <rect width="218" height="250" rx="5" fill="#fff" stroke="#c9d7de" stroke-width="2"/>
+      <rect width="218" height="8" rx="4" fill="#4e9b99"/>
+      <text x="22" y="48" fill="#286d83" font-size="18" letter-spacing="2">02</text>
+      <text x="22" y="108" fill="#24272b" font-size="26" font-weight="600">Participant</text>
+      <text x="22" y="143" fill="#24272b" font-size="26" font-weight="600">interviews</text>
+      <path d="M22 180h174" stroke="#d9e2e7" stroke-width="2"/>
+      <text x="22" y="216" fill="#626970" font-size="16">Everyday experience</text>
+      <text x="22" y="239" fill="#626970" font-size="16">changed the premise</text>
+    </g>
+    <g transform="translate(588 184)">
+      <rect width="218" height="250" rx="5" fill="#fff" stroke="#c9d7de" stroke-width="2"/>
+      <rect width="218" height="8" rx="4" fill="#286d83"/>
+      <text x="22" y="48" fill="#286d83" font-size="18" letter-spacing="2">03</text>
+      <text x="22" y="108" fill="#24272b" font-size="26" font-weight="600">Narrative</text>
+      <text x="22" y="143" fill="#24272b" font-size="26" font-weight="600">production</text>
+      <path d="M22 180h174" stroke="#d9e2e7" stroke-width="2"/>
+      <text x="22" y="216" fill="#626970" font-size="16">Findings became</text>
+      <text x="22" y="239" fill="#626970" font-size="16">scenes and actions</text>
+    </g>
+    <g transform="translate(846 184)">
+      <rect width="218" height="250" rx="5" fill="#fff" stroke="#c9d7de" stroke-width="2"/>
+      <rect width="218" height="8" rx="4" fill="#4e9b99"/>
+      <text x="22" y="48" fill="#286d83" font-size="18" letter-spacing="2">04</text>
+      <text x="22" y="108" fill="#24272b" font-size="26" font-weight="600">Two test</text>
+      <text x="22" y="143" fill="#24272b" font-size="26" font-weight="600">rounds</text>
+      <path d="M22 180h174" stroke="#d9e2e7" stroke-width="2"/>
+      <text x="22" y="216" fill="#626970" font-size="16">Pacing, challenge,</text>
+      <text x="22" y="239" fill="#626970" font-size="16">and tone were tested</text>
+    </g>
+    <g transform="translate(1104 184)">
+      <rect width="218" height="250" rx="5" fill="#fff" stroke="#c9d7de" stroke-width="2"/>
+      <rect width="218" height="8" rx="4" fill="#286d83"/>
+      <text x="22" y="48" fill="#286d83" font-size="18" letter-spacing="2">05</text>
+      <text x="22" y="108" fill="#24272b" font-size="26" font-weight="600">Revised</text>
+      <text x="22" y="143" fill="#24272b" font-size="26" font-weight="600">experience</text>
+      <path d="M22 180h174" stroke="#d9e2e7" stroke-width="2"/>
+      <text x="22" y="216" fill="#626970" font-size="16">Research carried</text>
+      <text x="22" y="239" fill="#626970" font-size="16">through to delivery</text>
+    </g>
+  </g>
+  <text x="72" y="520" fill="#286d83" font-family="Arial, sans-serif" font-size="18" letter-spacing="1">THE GRAY CANVAS · RESEARCH-LED DESIGN</text>
+  <path d="M72 548h1250" stroke="#bfd1d9" stroke-width="2"/>
+  <text x="72" y="592" fill="#425b6c" font-family="Arial, sans-serif" font-size="22">Initial assumption → interviews → production → two rounds of testing → revision</text>
+</svg>

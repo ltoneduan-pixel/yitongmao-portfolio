@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="title desc">
+  <title id="title">Kidneys and cysts</title>
+  <desc id="desc">A restrained medical illustration of two kidneys, with small circles indicating cysts.</desc>
+  <rect width="900" height="640" fill="#eaf3fa"/>
+  <path d="M428 137c-102-77-228 9-219 142 6 76 57 111 60 169 4 54 38 102 94 93 59-10 74-95 63-160-10-70 68-171 2-244Z" fill="#fbfcfd" stroke="#496f98" stroke-width="12"/>
+  <path d="M472 137c102-77 228 9 219 142-6 76-57 111-60 169-4 54-38 102-94 93-59-10-74-95-63-160 10-70-68-171-2-244Z" fill="#fbfcfd" stroke="#496f98" stroke-width="12"/>
+  <circle cx="340" cy="280" r="27" fill="#d9a975"/><circle cx="379" cy="390" r="20" fill="#d9a975"/>
+  <circle cx="560" cy="267" r="27" fill="#d9a975"/><circle cx="522" cy="400" r="20" fill="#d9a975"/>
+  <path d="M446 153v351m-38-336v124m84-124v124" fill="none" stroke="#91afc5" stroke-width="10" stroke-linecap="round"/>
+  <path d="M135 548h630" stroke="#c9dbe8" stroke-width="2"/>
+  <text x="450" y="592" fill="#496f98" font-family="Arial,sans-serif" font-size="23" letter-spacing="6" text-anchor="middle">POLYCYSTIC KIDNEY DISEASE</text>
+</svg>

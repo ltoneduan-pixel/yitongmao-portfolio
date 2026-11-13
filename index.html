@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7f8fa" />
+  <meta name="description" content="Yitong Mao's game design portfolio: interactive storytelling, complex game systems, collaborative production, and research-led design." />
+  <title>Yitong Mao — Games, feeling & systems</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preload" href="assets/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/inter-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="media.css" />
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="case.css" />
+  <link rel="stylesheet" href="jam.css" />
+  <script src="assets/lucide.min.js" defer></script>
+  <script src="media.js" defer></script>
+  <script src="home.js" defer></script>
+  <script src="case.js" defer></script>
+  <script src="jam.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="#home" aria-label="Yitong Mao, home">Yitong Mao<span>.</span></a>
+    <nav aria-label="Main navigation" id="main-navigation"></nav>
+  </div></header>
+  <main id="main" tabindex="-1">
+    <div id="home-view"></div>
+    <article id="case-view" class="case-view" hidden></article>
+    <noscript><p class="wrap">Enable JavaScript to explore the projects and case studies.</p></noscript>
+  </main>
+  <footer class="site-footer wrap"><a class="footer-name" href="#home">Yitong Mao</a><p>Games, feeling & systems.</p><a href="#home" class="text-link">Back to beginning <i data-lucide="arrow-up" aria-hidden="true"></i></a></footer>
+  <dialog id="image-dialog" aria-label="Project image viewer"><div class="image-toolbar"><p id="image-title"></p><div><button class="icon-button" data-zoom="out" aria-label="Zoom out" title="Zoom out"><i data-lucide="minus" aria-hidden="true"></i></button><button class="icon-button" data-zoom="in" aria-label="Zoom in" title="Zoom in"><i data-lucide="plus" aria-hidden="true"></i></button><button class="icon-button" data-zoom="reset" aria-label="Fit image" title="Fit image"><i data-lucide="maximize" aria-hidden="true"></i></button><button class="icon-button" id="close-image" aria-label="Close image" title="Close image"><i data-lucide="x" aria-hidden="true"></i></button></div></div><div class="image-stage"><img id="expanded-image" alt="" /></div><p id="zoom-status" class="sr-only" aria-live="polite"></p></dialog>
+</body>
+</html>
