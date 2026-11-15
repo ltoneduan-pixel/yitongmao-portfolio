@@ -133,7 +133,7 @@
         prompt:'Drag'
       },
       mars: {
-        image:'mars-gameplay.png', width:685, height:395,
+        image:'mars-gameplay.webp', width:685, height:395,
         alt:'A hand flipping food in a pan in Flip the Mars',
         summary:'A physical pan toss connects cooking interactions with food states, recipes, and orders.',
         contribution:'I built VR cooking interactions and used ERDs to connect food, recipes, and tasks, separating stored configuration from runtime cooking state.'

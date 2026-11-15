@@ -117,14 +117,14 @@ const projects = {
     cardPreview:{video:'previews/mars-preview.mp4',ratio:'16 / 9'},
     film:{poster:null,preview:null},
     chapterAliases:{film:'overview',intention:'exploration',reflection:'exploration'},
-    openingMediaGroups:[{id:'MARS-00',title:'VR cooking gameplay',hint:'A gameplay frame showing the hand, pan and stove together.',format:'Static cover',ratio:'16 / 9',items:[{image:'mars-gameplay.png',video:null,imageAlt:'A hand, pan and stove in Flip the Mars',caption:'Flip the Mars — gameplay overview.'}]}],
+    openingMediaGroups:[{id:'MARS-00',title:'VR cooking gameplay',hint:'A gameplay frame showing the hand, pan and stove together.',format:'Static cover',ratio:'16 / 9',items:[{image:'mars-gameplay.webp',video:null,imageAlt:'A hand, pan and stove in Flip the Mars',caption:'Flip the Mars — gameplay overview.'}]}],
     sections:[
       {id:'exploration',label:'VR cooking',title:'The pleasure of a pan toss.',paragraphs:[
         'I built the interaction around the pleasure of tossing food in a pan. Food stays with the pan through small movements, then releases for an upward toss or a hand grab. Heat flows from flame to pan to food, so a hot pan keeps cooking away from the stove.'
       ],mediaGroups:[
-        {id:'MARS-01',title:'Flip',hint:'Keep the hand, pan, and food visible during the toss.',format:'Short gameplay clip (5–8 seconds)',ratio:'16 / 9',items:[{image:'mars-gameplay.png',video:'mars/flip.mp4',playback:'loop',imageAlt:'Flipping food in a pan in Flip the Mars',caption:'Flip: a deliberate toss releases the food from the pan.'}]},
-        {id:'MARS-04',title:'Juice',hint:'Show the clearest change in the food as it cooks.',format:'Short gameplay clip (5–8 seconds)',ratio:'16 / 9',items:[{image:'mars-gameplay.png',video:'mars/juice.mp4',playback:'loop',imageAlt:'Food changing form in Flip the Mars',caption:'Juice: cooking changes the food’s form.'}]},
-        {id:'MARS-05',title:'Get Paid',hint:'Keep the finished dish, customer, or order feedback visible.',format:'Short gameplay clip (5–8 seconds)',ratio:'16 / 9',items:[{image:'mars-gameplay.png',video:'mars/get-paid.mp4',playback:'loop',imageAlt:'Serving an order in Flip the Mars',caption:'Get Paid: a finished dish completes the order.'}]}
+        {id:'MARS-01',title:'Flip',hint:'Keep the hand, pan, and food visible during the toss.',format:'Short gameplay clip (5–8 seconds)',ratio:'16 / 9',items:[{image:'mars-gameplay.webp',video:'mars/flip.mp4',playback:'loop',imageAlt:'Flipping food in a pan in Flip the Mars',caption:'Flip: a deliberate toss releases the food from the pan.'}]},
+        {id:'MARS-04',title:'Juice',hint:'Show the clearest change in the food as it cooks.',format:'Short gameplay clip (5–8 seconds)',ratio:'16 / 9',items:[{image:'mars-gameplay.webp',video:'mars/juice.mp4',playback:'loop',imageAlt:'Food changing form in Flip the Mars',caption:'Juice: cooking changes the food’s form.'}]},
+        {id:'MARS-05',title:'Get Paid',hint:'Keep the finished dish, customer, or order feedback visible.',format:'Short gameplay clip (5–8 seconds)',ratio:'16 / 9',items:[{image:'mars-gameplay.webp',video:'mars/get-paid.mp4',playback:'loop',imageAlt:'Serving an order in Flip the Mars',caption:'Get Paid: a finished dish completes the order.'}]}
       ]},
       {id:'implementation',label:'Data & systems',title:'Giving the simulation a structure.',paragraphs:[
         'I designed the relationships between food, recipes and tasks, using an ERD to map the system. Separating configuration from running state helped connect orders and ingredients to the cooking simulation.'
@@ -321,7 +321,7 @@ const projects = {
       ],mediaGroups:[
         {id:'MOU-01',title:'MOU01',ratio:'16 / 9',items:[{image:'jams/mousequrade/mou01-poster.jpg',video:'jams/mousequrade/mou01.mp4',playback:'loop',imageAlt:'Mousequrade MOU01 gameplay clip'}]},
         {id:'MOU-02',title:'Disguise and attack result',ratio:'16 / 9',items:[{label:'Mouse disguise',labelLang:'en',image:'jams/mousequrade/mou02-disguise-poster.jpg',video:'jams/mousequrade/mou02-disguise.mp4',playback:'loop',imageAlt:'The mouse using a disguise to blend in with NPCs'},{label:'Cat attack',labelLang:'en',image:'jams/mousequrade/mou02-attack-poster.jpg',video:'jams/mousequrade/mou02-attack.mp4',playback:'loop',imageAlt:'The result of the cat attacking a suspected mouse'}]},
-        {id:'MOU-03',title:'MOU03',ratio:'16 / 9',items:[{image:'jams/mousequrade/mou03-poster.jpg',video:'jams/mousequrade/mou03.mp4',playback:'loop',imageAlt:'Mousequrade MOU03 gameplay clip'}]}
+        {id:'MOU-03',title:'MOU03',ratio:'16 / 9',items:[{image:'jams/mousequrade/mou03-poster.webp',video:'jams/mousequrade/mou03.mp4',playback:'loop',imageAlt:'Mousequrade MOU03 gameplay clip'}]}
       ]},
       {id:'perfectionism',label:'The process',title:'The process',paragraphs:[
         'The way we worked together felt much more familiar after the previous jam. Our development speed had improved enormously: by the second evening, almost every feature was in place. Then the problems started.',
@@ -342,11 +342,11 @@ const projects = {
     role:'Team lead, lead design & all programming',
     summary:'Dive to repay a debt, using one grappling gun to move through the deep and collect resources before your oxygen runs out.',
     deck:'Dive into the deep to repay a debt. Use a grappling gun to move, dodge enemies and gather resources, then return to the boat before your oxygen or health runs out. Upgrade your equipment and earn enough before the allotted days are over.',
-    thumb:'jams/deep-background.png', hero:'jams/deep-background.png',
+    thumb:'jams/deep-background.webp', hero:'jams/deep-background.webp',
     heroAlt:'Debt of the Deep shown on a television during the jam',
     caption:'Debt of the Deep: one grappling gun for movement and collecting resources.',
     videoUrl:'https://youtu.be/ZYG7qyPPc6Q',
-    film:{poster:'jams/deep-background.png', alt:'Debt of the Deep gameplay video still', preview:null},
+    film:{poster:'jams/deep-background.webp', alt:'Debt of the Deep gameplay video still', preview:null},
     sections:[
       {id:'jam',label:'The idea',title:'The idea',paragraphs:[
         'An anchor dropping from a boat into the sea immediately suggested diving to us. I was also interested in how a ship raises its anchor to move and drops it to stay still. That separation between movement and stillness made me think of a grappling gun, and of a diver moving through the water by hooking onto points.',
