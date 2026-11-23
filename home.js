@@ -126,14 +126,14 @@
         contribution:'I drew all of the game’s art and designed the narrative, connected routes, and four abilities that let Eric explore them.'
       },
       graycanvas: {
-        image:'gray-canvas/canvas-cover.jpg', width:1366, height:768,
-        alt:'A woman invites the player to draw on a large blank canvas in The Gray Canvas',
+        image:'gray-canvas/research-interview.jpg', width:2554, height:1435,
+        alt:'An interviewer holding a tablet speaks with a person in a white coat',
         summary:'Interviews and two rounds of testing reshaped a story about everyday life with PKD.',
         contribution:'I conducted participant interviews, designed the narrative and interactions, and developed the game in Godot.',
         prompt:'Drag'
       },
       mars: {
-        image:'mars-gameplay.webp', width:685, height:395,
+        image:'mars-gameplay.png', width:685, height:395,
         alt:'A hand flipping food in a pan in Flip the Mars',
         summary:'A physical pan toss connects cooking interactions with food states, recipes, and orders.',
         contribution:'I built VR cooking interactions and used ERDs to connect food, recipes, and tasks, separating stored configuration from runtime cooking state.'
