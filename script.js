@@ -201,18 +201,6 @@ const projects = {
       ]}
     ]
   },
-  deliveryman: {
-    id:'deliveryman',caseLayout:'highlights',title:'Deliveryman',timelineLabel:'Earlier',type:'Parkour / third-person action',engine:'UEFN',theme:'Early experiment',role:'UEFN prototyping & level experiments',
-    summary:'My first UEFN experiment: delivery missions, parkour and third-person action in a playable level.',
-    deck:'An early UEFN game combining dangerous deliveries, parkour and third-person action.',
-    thumb:null,hero:null,heroAlt:'Deliveryman gameplay',caption:'Following curiosity into a playable level.',
-    source:'https://www.figma.com/design/xsrGiiljb15n4H3PuFoPfl/Daily-Project?node-id=3-2',film:{poster:null,preview:null},
-    chapterAliases:{film:'overview',reflection:'exploration'},
-    openingMediaGroups:[{id:'DEL-00',title:'Project cover',hint:'A representative gameplay still from the final UEFN version.',format:'Static cover',ratio:'16 / 9',items:[{image:null,video:null,imageAlt:'Deliveryman video cover',caption:'Deliveryman — gameplay overview.'}]}],
-    sections:[{id:'exploration',label:'First UEFN project',title:'An idea I could play.',paragraphs:[
-      'I used UEFN to bring delivery missions, parkour, combat and NPC conversations into a playable level. It was my first game-development experiment, driven by curiosity before I had a clear design process.'
-    ],mediaGroups:[{id:'DEL-01',title:'Delivery, parkour, and combat',hint:'Show how a delivery objective connects to movement or combat in the final build.',format:'Short gameplay clip (5–12 seconds) or still',ratio:'16 / 9',items:[{image:null,video:null,imageAlt:'Delivery missions, parkour or combat in the UEFN Deliveryman project',caption:'Trying delivery missions, movement and action within one playable space.'}]}]}]
-  },
   alive: {
     id:'alive',teamLead:true, kind:'jam', showInJourney:false, word:'Alive', title:'No Sleep No Life', date:'Jul 2025', start:'2025-07',
     type:'2D platformer', engine:'Unity', theme:'Everything is Alive',
@@ -394,7 +382,6 @@ const portfolioSections = [
     introduction:'I have also taken part in **4** game jams (**2** as team leader) and worked on a **2-month** collaborative project.'}
 ];
 
-const archiveOrder = ['bestfriend','graycanvas','mars','cardiac','deliveryman'];
 const jamOrder = portfolioSections.flatMap(section => section.works).filter(id => projects[id]?.kind === 'jam');
 
 // Professional practice remains separate from authored game projects and is
@@ -666,7 +653,7 @@ function renderRoute(route,restore=false,moveFocus=true){
     const nextId=home.nextWork(id);
     const next=nextId&&(practices[nextId]||projects[nextId]);
     const reader=p.kind==='jam'?window.JamExperience:window.CaseExperience;
-    const label=portfolioSections.find(section=>section.id===owner)?.label||'Early work';
+    const label=portfolioSections.find(section=>section.id===owner)?.label||'Portfolio';
     caseReader=reader.create({
       root:views.project,project:p,routePrefix:routeType,
       nextProject:next?{id:nextId,title:practices[nextId]?.team||next.title,kicker:p.nextWorkLabel||'Next work',route:(practices[nextId]?'practice/':'project/')+nextId}:null,
@@ -725,6 +712,7 @@ window.addEventListener('popstate',()=>renderRoute(normaliseRoute(location.hash)
 window.addEventListener('hashchange',()=>{
   const route=normaliseRoute(location.hash);
   if(route!==currentRoute)renderRoute(route);
+  else if(location.hash!=='#'+route)history.replaceState(history.state,'','#'+route);
 });
 window.addEventListener('pagehide',()=>stashPosition());
 

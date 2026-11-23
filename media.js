@@ -27,7 +27,7 @@
   }
   // Ordinary cards and the Jam timeline share this optional preview. The
   // control is a sibling of the project link, never a button inside a link.
-  function cardMedia(project, { image, alt, href, className = '', width, height, linkId, prompt } = {}) {
+  function cardMedia(project, { image, alt, href, className = '', width, height, linkId } = {}) {
     const poster = localFile(image);
     const video = videoFile(project.cardPreview?.video);
     const title = project.team || project.title;
@@ -35,8 +35,7 @@
       (video ? ' style="--preview-ratio:' + ratioFor(project.cardPreview.ratio) + '"' : '') + '>' +
       '<a class="card-media-link"' + (linkId ? ' id="' + escape(linkId) + '"' : '') + ' href="' + escape(href) + '" aria-label="Explore ' + escape(title) + '">' +
       (poster ? '<img data-preview-poster src="' + escape(asset(poster)) + '" alt="' + escape(alt || title) + '"' + (width && height ? ' width="' + Number(width) + '" height="' + Number(height) + '"' : '') + ' loading="lazy">' : '') +
-      (video ? videoMarkup(video, { image: poster, alt: title + ' gameplay preview', loop: true, card: true }) : '') +
-      (prompt ? '<span class="work-localized-prompt" aria-hidden="true">' + escape(prompt) + '</span>' : '') + '</a>' +
+      (video ? videoMarkup(video, { image: poster, alt: title + ' gameplay preview', loop: true, card: true }) : '') + '</a>' +
       (video ? toggleMarkup('preview of ' + title) + '<p class="card-preview-error" role="status" hidden>Preview unavailable. You can still explore the project.</p>' : '') + '</div>';
   }
 

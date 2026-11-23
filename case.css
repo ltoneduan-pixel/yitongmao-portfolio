@@ -584,18 +584,6 @@ body.case-mode[data-case-project="graycanvas"] .brand span { color: var(--case-a
 .case-project-cardiac .jam-media-placeholder { background: #eceff1; border-color: #aebdc5; }
 .case-project-cardiac .jam-media-optional { color: #ccbfa8; border-color: #766550; }
 .case-project-cardiac .icon-button:hover { background: #352a22; }
-.case-project-deliveryman { --case-paper: #edf1fc; --case-accent: #2844ad; --case-rule: #bdc8e5; --case-ink: #101e51; --case-muted: #5c688c; }
-.case-project-deliveryman .highlight-overview { display: grid; grid-template-columns: minmax(0,1fr); grid-template-rows: auto auto auto; align-content: start; gap: 24px; }
-.case-project-deliveryman .highlight-overview>header { grid-column: 1; padding: 25px 28px; background: #000845; color: #fff; }
-.case-project-deliveryman .highlight-overview header>.eyebrow { color: #b9c7ff; }
-.case-project-deliveryman .highlight-overview .chapter-deck { max-width: 690px; margin-top: 14px; }
-.case-project-deliveryman .highlight-overview .chapter-facts { grid-column: 1; grid-row: 2; grid-template-columns: 1fr 2fr; }
-.case-project-deliveryman .highlight-overview .chapter-facts>div:last-child { grid-column: auto; }
-.case-project-deliveryman .case-opening-media { grid-column: 1; grid-row: 3; }
-.case-project-deliveryman .chapter-shell h1,.case-project-deliveryman .chapter-shell h2 { font-family: var(--sans); font-weight: 600; letter-spacing: -.035em; }
-.case-project-deliveryman .chapter-shell h1 { font-size: 46px; }
-.case-project-deliveryman .chapter-shell h2 { font-size: 36px; }
-.case-project-deliveryman .highlight-chapter>header { border-left: 4px solid #2844ad; padding-left: 18px; }
 .case-mode[data-case-project="mars"] .site-header { background: #222526; color: #f3f0e9; border-color: #4b5253; }
 .case-mode[data-case-project="mars"] .site-header nav a:after { background: #f3f0e9; }
 .case-mode[data-case-project="mars"] .site-header [data-nav="more"] { color: #f17e6f; }
@@ -604,8 +592,6 @@ body.case-mode[data-case-project="graycanvas"] .brand span { color: var(--case-a
 .case-mode[data-case-project="cardiac"] .site-header { background: #1c1511; color: #f0e9dd; border-color: #51443b; }
 .case-mode[data-case-project="cardiac"] .site-header nav a:after { background: #f0e9dd; }
 .case-mode[data-case-project="cardiac"] .site-header [data-nav="more"] { color: #c9b471; }
-.case-mode[data-case-project="deliveryman"] .site-header { background: #edf1fc; color: #101e51; border-color: #bdc8e5; }
-.case-mode[data-case-project="deliveryman"] .site-header [data-nav="more"] { color: #2844ad; }
 /* Keep the selected project chapters readable as a single desktop composition. */
 @media (min-width:1001px) and (min-height:720px) {
   .case-highlights .chapter-shell { width: calc(100% - 48px); max-width: 1120px; min-height: 0; height: 100%; padding: 20px 0 16px; gap: 14px; }
@@ -648,9 +634,6 @@ body.case-mode[data-case-project="graycanvas"] .brand span { color: var(--case-a
   .case-project-cardiac [data-chapter="implementation"] .highlight-chapter>header,.case-project-cardiac [data-chapter="implementation"] .chapter-prose { grid-column: 1; }
   .case-project-cardiac [data-media-group="CL-02"] { grid-column: 2; grid-row: 1 / span 2; align-self: center; }
   .case-project-cardiac [data-media-group="CL-03"] { grid-column: 3; grid-row: 1 / span 2; align-self: center; }
-  .case-project-deliveryman [data-chapter="exploration"] .highlight-chapter { grid-template-columns: minmax(260px,.7fr) minmax(0,1.3fr); grid-template-rows: auto 1fr; }
-  .case-project-deliveryman [data-chapter="exploration"] .highlight-chapter>header,.case-project-deliveryman [data-chapter="exploration"] .chapter-prose { grid-column: 1; }
-  .case-project-deliveryman [data-media-group="DEL-01"] { grid-column: 2; grid-row: 1 / span 2; align-self: center; }
 }
 @media(min-width:1100px) {
   .case-project-bestfriend [data-chapter="exploration"] .highlight-chapter { display: grid; grid-template-columns: minmax(0,.7fr) minmax(0,1.4fr); grid-template-rows: auto 1fr; gap: 20px 34px; align-content: start; }
@@ -669,12 +652,9 @@ body.case-mode[data-case-project="graycanvas"] .brand span { color: var(--case-a
   .case-highlights .highlight-overview { display: flex; flex-direction: column; align-items: stretch; gap: 25px; }
   .case-highlights .chapter-shell h1 { font-size: 43px; }
   .case-project-mars .chapter-shell h1 { font-size: 46px; }
-  .case-project-deliveryman .chapter-shell h1 { font-size: 35px; }
   .case-highlights .chapter-shell h2 { font-size: 33px; }
   .highlight-overview .chapter-deck,.highlight-chapter>.chapter-prose { font-size: 16px; }
   .case-opening-media { align-self: stretch; }
-  .case-project-deliveryman .highlight-overview>header { padding: 22px 18px; }
-  .case-project-deliveryman .highlight-overview .chapter-facts { grid-template-columns: 1fr 1.5fr; }
   .case-project-mars [data-chapter="implementation"] .jam-media-group { padding: 12px 0 0; border-width: 1px 0 0; }
   .highlight-abilities { grid-template-columns: minmax(0,1fr); }
   .highlight-abilities .ability-description { min-height: 0; }

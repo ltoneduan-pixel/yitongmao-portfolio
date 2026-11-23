@@ -97,7 +97,7 @@
   }[character]));
 
   function ownerFor(sections, id) {
-    return sections.find(section => section.works.includes(id))?.id || 'early-work';
+    return sections.find(section => section.works.includes(id))?.id || 'home';
   }
   function canonicalRoute(sections, raw) {
     if (raw === 'journey') return 'home';
@@ -155,7 +155,7 @@
       const p = practices[id] || projects[id], content = presentation[id];
       const meta = practices[id] ? p.company + ' · ' + p.position : id === 'cardiac' ? '2-month collaboration · Unreal Engine 5' : 'Individual project · ' + p.engine;
       return '<article class="portfolio-work work-' + id + '" data-work="' + id + '">' +
-        window.PortfolioMedia.cardMedia(p, { image:content.image, alt:content.alt, href:'#' + routeFor(id), className:'work-art', width:content.width, height:content.height, prompt:content.prompt }) +
+        window.PortfolioMedia.cardMedia(p, { image:content.image, alt:content.alt, href:'#' + routeFor(id), className:'work-art', width:content.width, height:content.height }) +
         '<a class="work-copy whole-card-link" id="work-' + id + '" href="#' + routeFor(id) + '" aria-label="Explore ' + escape(titleFor(id)) + '"><p class="work-meta">' + escape(meta) + '</p><h3>' + escape(titleFor(id)) + '</h3>' +
         (content.summary ? '<p>' + escape(content.summary) + '</p>' : '') +
         '<div class="work-contribution"><h4>My work</h4><p>' + escape(content.contribution) + '</p></div>' +
@@ -196,9 +196,7 @@
       '<figure class="opening-portrait"><img class="opening-portrait-image" src="assets/' + escape(avatar.src) + '" alt="' + escape(avatar.alt) + '" width="' + avatar.desktop[0] + '" height="' + avatar.desktop[1] + '"><span class="opening-bird" role="img" aria-label="A toucan perched on a branch"><img src="assets/profile-placeholder.jpg" alt=""></span></figure>' +
       backgroundMarkup +
       '<a class="explore-cue" href="#' + sections[0].id + '"><span class="desktop-cue">Scroll to explore</span><span class="touch-cue">Swipe up to explore</span>' + icon('arrow-down') + '</a></section>' +
-      sections.map(sectionMarkup).join('') +
-      '<section id="early-work" class="early-work portfolio-shell" data-portfolio-section="early-work" aria-labelledby="title-early-work">' +
-      '<div><p class="opening-eyebrow">Early work</p><h2 id="title-early-work" tabindex="-1">Deliveryman</h2></div><a id="work-deliveryman" class="work-link" href="#project/deliveryman">Explore the project ' + icon('arrow-up-right') + '</a><a class="work-link" href="#home">Back to beginning ' + icon('arrow-up') + '</a></section>';
+      sections.map(sectionMarkup).join('');
     document.querySelector('#main-navigation').innerHTML = sections.map(section => '<a href="#' + section.id + '" data-nav="' + section.id + '">' + section.label + '</a>').join('');
     const cardMedia = window.PortfolioMedia.bind(root, { enabled:false });
     const panels = [...root.querySelectorAll('[data-portfolio-section]')];
@@ -220,7 +218,7 @@
       for (const panel of panels) {
         if (panel.getBoundingClientRect().top <= headerHeight() + 100) id = panel.dataset.portfolioSection;
       }
-      if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 3 && id !== 'early-work') id = sections.at(-1).id;
+      if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 3) id = sections.at(-1).id;
       mark(id);
     };
     window.addEventListener('scroll', () => { if (enabled && !frame) frame = requestAnimationFrame(track); },{passive:true});
@@ -238,7 +236,7 @@
     motion.addEventListener('change',revealAll);
     revealAll();
     return {
-      isRoute: route => ['home','early-work',...sections.map(section => section.id)].includes(route),
+      isRoute: route => route === 'home' || sections.some(section => section.id === route),
       canonical: route => canonicalRoute(sections,route),
       ownerFor: id => ownerFor(sections,id),
       nextWork: id => nextWork(sections,id),

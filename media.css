@@ -68,8 +68,7 @@
 .portfolio-card-media.has-video-preview img[data-preview-poster] { object-fit:cover; aspect-ratio:auto; }
 .portfolio-card-media .portfolio-media-video { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; opacity:0; pointer-events:none; transition:opacity 120ms ease; }
 .portfolio-card-media.has-preview-frame .portfolio-media-video { opacity:1; }
-.portfolio-card-media.has-preview-frame img[data-preview-poster],
-.portfolio-card-media.has-preview-frame .work-localized-prompt { opacity:0; }
+.portfolio-card-media.has-preview-frame img[data-preview-poster] { opacity:0; }
 .card-preview-error { position:absolute; bottom:0; left:0; right:0; padding:10px 54px 10px 10px; background:#20272be8; color:#fff; font-size:14px; line-height:1.5; pointer-events:none; }
 .card-preview-error[hidden] { display:none; }
 .portfolio-media-loop-toggle { width:36px; height:36px; z-index:4; opacity:.94; }
