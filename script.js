@@ -28,7 +28,6 @@ const projects = {
     source:'https://www.figma.com/design/xsrGiiljb15n4H3PuFoPfl/Daily-Project?node-id=382-2',videos:[{label:'Watch gameplay',url:'https://youtu.be/Tc4N4wF7ZCo'}],
     film:{poster:null,preview:null},
     chapterAliases:{film:'overview',intention:'exploration',reflection:'implementation',responsibilities:'exploration',collaboration:'implementation'},
-    nextWorkLabel:'Professional practice',
     openingMediaGroups:[{id:'CL-00',title:'Gameplay overview',hint:'Select the frame to watch the gameplay video.',format:'Gameplay video',ratio:'16 / 9',items:[{image:'cardiac-level.png',video:null,imageAlt:'Annotated level overview for Cardiac Lock',caption:'Cardiac Lock — gameplay overview. Select to watch.'}]}],
     sections:[
       {id:'exploration',label:'Responsibilities',title:'My responsibilities.',paragraphs:[
@@ -145,6 +144,7 @@ const projects = {
     heroAlt:'An interviewer holding a tablet speaks with a person in a white coat',
     caption:'An interactive story about the everyday experiences of people living with PKD.',
     videos:[{label:'Watch project video',url:'https://youtu.be/NGM3BM2bxwI'}],
+    nextWorkLabel:'Professional practice',
     chapterAliases:{film:'overview',intention:'origin',decision:'origin',reflection:'iteration-02',research:'interviews',design:'interactions',production:'interactions',testing:'iteration-01','body-awareness':'interactions','family-context':'interactions'},
     openingMediaGroups:[{
       id:'GRAY-00',title:'The Gray Canvas',hint:'An interactive story reshaped through interviews and testing.',
@@ -388,10 +388,10 @@ const portfolioSections = [
     ],emphasis:['AON','dependencies','stored data','runtime state','interfaces']
   }},
   {id:'research',label:'Research',works:['graycanvas'],legacy:['skill/research']},
-  {id:'collaboration',label:'Collaboration',works:['anchor','mask','collector','alive','cardiac'],legacy:['skill/collaboration','more','archive/jam'],
-    introduction:'I have also taken part in **4** game jams (**2** as team leader) and worked on a **2-month** collaborative project.'},
   {id:'internship',label:'Internship',works:['internship'],legacy:['archive/internship'],
-    introduction:'I am a systems design intern on **Swords of Legends**, a **large-scale single-player action game**.'}
+    introduction:'I am a systems design intern on **Swords of Legends**, a **large-scale single-player action game**.'},
+  {id:'collaboration',label:'Collaboration',works:['anchor','mask','collector','alive','cardiac'],legacy:['skill/collaboration','more','archive/jam'],
+    introduction:'I have also taken part in **4** game jams (**2** as team leader) and worked on a **2-month** collaborative project.'}
 ];
 
 const archiveOrder = ['bestfriend','graycanvas','mars','cardiac','deliveryman'];
