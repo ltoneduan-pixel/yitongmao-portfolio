@@ -129,8 +129,7 @@
         image:'gray-canvas/research-interview.jpg', width:2554, height:1435,
         alt:'An interviewer holding a tablet speaks with a person in a white coat',
         summary:'Interviews and two rounds of testing reshaped a story about everyday life with PKD.',
-        contribution:'I conducted participant interviews, designed the narrative and interactions, and developed the game in Godot.',
-        prompt:'Drag'
+        contribution:'I conducted participant interviews, designed the narrative and interactions, and developed the game in Godot.'
       },
       mars: {
         image:'mars-gameplay.webp', width:685, height:395,
